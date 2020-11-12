@@ -1,0 +1,17 @@
+{
+  "name": "dex price oracle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bn.js": "^5.1.3",
+    "loom-js": "^1.55.0",
+    "loom-truffle-provider": "^0.13.0",
+    "openzeppelin-solidity": "^3.2.0"
+  }
+}
