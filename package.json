@@ -1,5 +1,5 @@
 {
-  "name": "dex price oracle",
+  "name": "options price oracle",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
