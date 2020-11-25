@@ -2,7 +2,7 @@ pragma solidity 0.6.0;
 import '../../oracle/contracts/IETHPriceOracle.sol';
 import "openzeppelin-solidity/contracts/access/Ownable.sol";
 
-contract CallerContract is Ownable {
+contract Caller is Ownable {
     private uint256 ETHPrice;
     IETHPriceOracle private ETHPriceOracleInstance;
     address private ETHPriceOracleAddress;
