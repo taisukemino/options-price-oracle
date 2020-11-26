@@ -26,7 +26,7 @@ contract Caller is Ownable {
     }
 
     function callback(uint256 _ethPrice, uint256 _id) public onlyOracle {
-      require(myRequests[id] === true, "id is not valid");
+      require(myRequests[id] == true, "id is not valid");
       ETHPrice = _ethPrice;
       delete myRequests[id];
 
