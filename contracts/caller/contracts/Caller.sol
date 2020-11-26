@@ -3,10 +3,12 @@ import '../../oracle/contracts/IETHPriceOracle.sol';
 import "openzeppelin-solidity/contracts/access/Ownable.sol";
 
 contract Caller is Ownable {
-    private uint256 ETHPrice;
     IETHPriceOracle private ETHPriceOracleInstance;
+
+    private uint256 ETHPrice;
     address private ETHPriceOracleAddress;
     mapping(uint256 => bool) myRequests;
+
     event NewOracleAddressRegistered(address oracleAddress);
     event ReceivedNewRequestId(uint256 id);
     event ETHPriceUpdated(uint256 ETHPrice, uint256 id);

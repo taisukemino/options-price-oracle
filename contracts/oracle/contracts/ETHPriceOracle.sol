@@ -4,9 +4,11 @@ import "openzeppelin-solidity/contracts/access/Ownable.sol";
 
 interface ETHPriceOracle is Ownable {
     ICaller private ICallerInstance;
+
     uint256 private nonce = 0;
     uint256 private modulus = 1000;
     mapping(uint256 => bool) pendingRequests;
+    
     event GetLatestETHPrice(address callerAddress, uint id);
     event SetLatestETHPrice(uint256 ethPrice, address callerAddress);
 
@@ -29,3 +31,4 @@ interface ETHPriceOracle is Ownable {
         emit SetLatestETHPrice(_ethPrice, callerAddress); 
     }
 }
+// continue to the oracle 2 zombies course
