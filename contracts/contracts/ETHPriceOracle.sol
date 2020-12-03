@@ -1,5 +1,5 @@
 pragma solidity 0.6.0;
-import "../../contracts/ICaller.sol";
+import "./interfaces/ICaller.sol";
 import "openzeppelin-solidity/contracts/access/Ownable.sol";
 
 interface ETHPriceOracle is Ownable {
@@ -31,4 +31,5 @@ interface ETHPriceOracle is Ownable {
         emit SetLatestETHPrice(_ethPrice, callerAddress); 
     }
 }
-// continue to the oracle 2 zombies course
+
+// continue to the oracle 2 zombies course chapter 13

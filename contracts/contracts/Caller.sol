@@ -1,5 +1,5 @@
 pragma solidity 0.6.0;
-import '../../oracle/contracts/IETHPriceOracle.sol';
+import './interfaces/IETHPriceOracle.sol';
 import "openzeppelin-solidity/contracts/access/Ownable.sol";
 
 contract Caller is Ownable {
